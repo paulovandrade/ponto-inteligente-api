@@ -60,7 +60,7 @@ public class Funcionario implements Serializable {
     @ManyToOne
     private Empresa empresa;
 
-    @OneToMany(mappedBy = "funcinario", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "funcionario", cascade = CascadeType.ALL)
     private List<Lancamento> lancamentos;
 
     @PreUpdate
